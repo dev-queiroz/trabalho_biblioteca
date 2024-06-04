@@ -13,7 +13,7 @@
     <input type="text" id="nome" name="nome" required><br><br>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
+    <input type="text" id="email" name="email" required><br><br>
 
     <label for="nascimento">Data de Nascimento:</label>
     <input type="date" id="nascimento" name="nascimento" required><br><br>
