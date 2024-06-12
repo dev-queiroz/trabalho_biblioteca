@@ -42,8 +42,8 @@
             echo "</td>";
             echo "</tr>";
           }
-         } else {isso
-          echo "<tr><td colspan='5'>Nenhum usuário cadastrado.</td></tr>";
+         } else {
+            echo "<tr><td colspan='5'>Nenhum usuário cadastrado.</td></tr>";
          }
        ?>
     </tbody>
