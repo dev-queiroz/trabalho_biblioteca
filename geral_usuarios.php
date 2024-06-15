@@ -7,15 +7,13 @@
         $nome = $_POST["nome"];
         $email = $_POST["email"];
         $nascimento = $_POST["nascimento"];
-        $senha = $_POST["senha"];
-        $telefone = $_POST["telefone"];
 
-        if (empty($nome) || empty($email) || empty($nascimento) || empty($senha) || empty($telefone)) {
+        if (empty($nome) || empty($email) || empty($nascimento)) {
           echo "<script>alert('Preencha todos os campos obrigatórios!');</script>";
           exit;
         }
 
-        $sql = "INSERT INTO usuario (nome, email, nascimento, senha, telefone) VALUES ({$nome}, {$email}, {$nascimento}, {senha}, {telefone})";
+        $sql = "INSERT INTO usuario (nome, email, nascimento) VALUES ({$nome}, {$email}, {$nascimento})";
         $resultado = $conn->query($sql);
 
         if ($resultado) {
@@ -31,15 +29,13 @@
         $nome = $_POST["nome"];
         $email = $_POST["email"];
         $nascimento = $_POST["nascimento"];
-        $senha = $_POST["senha"];
-        $telefone = $_POST["telefone"];
 
-if (empty($nome) || empty($email) || empty($nascimento) || empty($senha) || empty($telefone)) {
+        if (empty($nome) || empty($email) || empty($nascimento)) {
           echo "<script>alert('Preencha todos os campos obrigatórios!');</script>";
           exit;
         }
 
-        $sql = "UPDATE usuario SET nome = '$nome', email = '$email', nascimento = '$nascimento', senha = '$senha', telefone = '$telefone' WHERE id = $id";
+        $sql = "UPDATE usuario SET nome = '$nome', email = '$email', nascimento = '$nascimento' WHERE id = $id";
         $resultado = $conn->query($sql);
 
         if ($resultado == true) {
