@@ -23,9 +23,3 @@ git clone https://github.com/dev-queiroz/trabalho_biblioteca.git
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, enviar pull requests ou melhorar a documentação.
-
-## Licença
-
-Este projeto está licenciado sob a GNU Affero General Public License.
-
-Não deixe de ler!😉
